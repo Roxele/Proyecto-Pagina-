@@ -1,32 +1,35 @@
 .nav-enlace{  
     display: inline-block; 
-    background: salmon;
+    background:     #BF5F72;
     color: #fff;
     padding: 10px 25px;
     text-decoration: none;
-    border: 2px solid black;   
+    border: 2px #000000;   
     border-radius: 5%;
     
 
 }
 .nav-enlace:hover{
-    background: rosybrown;
+    background: #A00F2C;
 }
 nav{
-    background: rgb(207, 62, 62);
+    background: #2F2E2E;
     display: flex;
     justify-content: space-around;
     border-radius: 2%;
-    border: 2px solid black;
     box-shadow: 5px 5px 4px gray;
 }
 .nav-button{
-    background: salmon;
+    background: #BF5F72;
     color: #fff;
     padding: 10px 0;
     display: none;
 }
-@media (max-width: 600px){
+.logo{
+    height: 100%;
+    width: auto;
+}
+@media (max-width: 475px){
     nav{
         flex-direction: column;
     }
@@ -38,5 +41,8 @@ nav{
     }
     .desaparece{
         display: none;
+    }
+    .logo{
+        width: auto;
     }
 }
