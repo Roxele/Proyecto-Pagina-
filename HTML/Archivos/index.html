@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rio Quiapo | Consultas</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" type="image/png" href="img/tibia.png">
 </head>
 <body>
     <!-- header es el logo de la pagina -->
@@ -14,10 +15,20 @@
     </header>
     <!-- nav es para tener anclas con las opciones en un home de una pagina web -->
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contactos</a>
+        <button class="nav-button" onclick="action()">Menú</button>
+        <a href="#" class="nav-enlace desaparece">Inicio</a>
+        <a href="#" class="nav-enlace desaparece">Nosotros</a>
+        <a href="#" class="nav-enlace desaparece">Contactos</a>
     </nav>
+    <script>
+        function action(){
+            console.log('El boton esta funcionando ;)');
+            var opcion = document.getElementsByClassName('nav-enlace');
+            for(var i = 0; i<opcion.length;i++){
+                opcion[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
     <!-- section es para tener un slider o podria haber un parrafo etc. -->
     <section>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam sequi distinctio ut in suscipit laudantium blanditiis consequatur perspiciatis provident ipsam harum quidem facilis, aperiam sint repellat perferendis, culpa delectus facere.</p>
@@ -25,7 +36,7 @@
     <!-- aside es para la publicidad en el sitio web -->
     <aside>
         <p>Publicidad</p>
-        <img src="img/poto.jpg" alt="">
+        
     </aside>
 
 </body>
