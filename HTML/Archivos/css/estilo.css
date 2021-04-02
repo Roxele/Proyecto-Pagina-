@@ -1,11 +1,23 @@
 nav{
-    
-    margin-bottom: 50px;
-    background: rgb(255, 133, 102);
-    padding-left: 500px;
+    display: flex;
+    justify-content:space-around;
+    background: #2F2E2E;
 
 }
 
+.nav-link{
+    background: #BF5F72;
+    color: #fff;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background: #A00F2C;
+}
+
+
+
 .ads-right{
-    display: block;
+    display: block;;
 }
